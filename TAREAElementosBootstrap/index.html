@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <title>Elementos de Interés en Bootstrap</title>
+  </head>
+  <body>
+    <section class="container">
+        <div class="bg-light p-4 rounded-3">
+            <div class="container-fluid">
+            <h1 class="display-5 fw-bold">Custom jumbotron</h1>
+            <p class="col-md-8 fs-4">
+                Using a series of utilities, you can create this jumbotron, just
+                like the one in previous versions of Bootstrap. Check out the
+                examples below for how you can remix and restyle it to your liking.
+            </p>
+            <button
+                class="btn btn-primary text-capitalize btn-lg"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+            >
+                Abrir modal
+            </button>
+            </div>
+            <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">...</div>
+                    <div class="modal-footer">
+                        <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                        >
+                        Close
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                        Save changes
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- Modal -->
+        
+    </section>
+    <section class="container">
+        <div class="container-fluid p-4">
+            <form>
+                <div class="mb-3">
+                  <label for="nombre" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="nombre" aria-describedby="nombreHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Phone</label>
+                    <input type="number" class="form-control" id="phone" aria-describedby="phoneHelp">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </section>
+    <section class="container pt-4 pb-4">
+        <div class="card container-fluid" style="width: 18rem;">
+            <img src="img/image.png" class="card-img-top" alt="imagePortfolio">
+            <div class="card-body">
+              <h5 class="card-title">Full Stack Developer</h5>
+              <p class="card-text">
+                Organizado con gran capacidad de adaptación, 
+                trabajo en equipo. Habituado a un alto nivel 
+                de exigencia acostumbrado a trabajar por objetivos. 
+                Gran disposición hacia desafíos, aprendizajes que 
+                me permitan ser un aporte a la organización.</p>
+              <a href="https://portfolioluigicoder.web.app" target="_blank" class="btn btn-primary">Porfolio</a>
+              <figcaption class="blockquote-footer pt-3">
+                <cite title="Don Quijote de la Mancha">Ingresa a la pastilla azul</cite>
+              </figcaption>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">luigicoder28@gmail.com</small>
+            </div>
+        </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
